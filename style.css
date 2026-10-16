@@ -1,0 +1,210 @@
+
+:root {
+    --background: #f7f6f1;
+    --navy: #182b43;
+    --blue: #7898b2;
+    --text: #596a7a;
+    --line: #d9dedf;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--navy);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.8;
+}
+
+header {
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--line);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a, a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav a {
+    font-size: 13px;
+    color: var(--text);
+}
+
+nav a:hover, a:hover {
+    color: var(--blue);
+}
+
+.hero {
+    min-height: 570px;
+    padding: 130px 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.eyebrow, .project-type {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--blue);
+    font-weight: 600;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(55px, 8vw, 95px);
+    line-height: 1.1;
+    margin: 15px 0;
+}
+
+h1 span, h2 em {
+    color: var(--blue);
+}
+
+.intro {
+    max-width: 560px;
+    color: var(--text);
+    font-size: 18px;
+}
+
+.button {
+    background: var(--navy);
+    color: white;
+    padding: 12px 20px;
+    display: inline-block;
+    width: fit-content;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.button:hover {
+    color: white;
+    background: #314b68;
+}
+
+.section {
+    padding: 100px 12%;
+    border-top: 1px solid var(--line);
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 5vw, 60px);
+    line-height: 1.2;
+    margin: 10px 0 35px;
+}
+
+.section > p:not(.eyebrow) {
+    max-width: 720px;
+    color: var(--text);
+}
+
+.project, .goal {
+    padding: 30px;
+    margin: 25px 0;
+    background: white;
+    border: 1px solid var(--line);
+}
+
+.project h3, .goal h3, .section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.project p:not(.project-type), .goal p:not(.project-type) {
+    color: var(--text);
+    max-width: 700px;
+}
+
+.tags {
+    color: #71869a;
+    font-size: 13px;
+}
+
+.project a, .contact a {
+    font-size: 13px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--blue);
+    padding-bottom: 3px;
+}
+
+.contact {
+    background: var(--navy);
+    color: white;
+    text-align: center;
+    padding: 100px 10%;
+}
+
+.contact p {
+    color: #c2cdd5;
+}
+
+.contact .eyebrow {
+    color: #9eb6c9;
+}
+
+.contact h2 em {
+    color: #9eb6c9;
+}
+
+footer {
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    color: #87949d;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .hero {
+        padding: 90px 8%;
+        min-height: 480px;
+    }
+
+    .section {
+        padding: 75px 8%;
+    }
+
+    .project {
+        padding: 22px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
